@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    background: #eeeff0;
+}
+
+.container {
+    max-width: 1500px;
+    min-width: 70%;
+    margin: auto;
+}
+
+#leantk-title {
+    font-family: inter, sans-serif;
+    font-size: 5rem;
+    line-height: 0.7;
+    letter-spacing: -1px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: #11182a;
+    margin-left: 20px
+}
+
+#leantk-title span {
+    font-size: 2.5rem;
+    color: #00008B;
+}
+
+.login,
+.register {
+    width: 400px;
+    background-color: #ffffff;
+    box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+    margin-left: 25%;
+}
+
+.login h1,
+.register h1 {
+    text-align: center;
+    color: #00008B;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #dee0e4;
+}
+
+.login .links,
+.register .links {
+    display: flex;
+    padding: 0 15px;
+}
+
+.login .links a,
+.register .links a {
+    color: #adb2ba;
+    text-decoration: none;
+    display: inline-flex;
+    padding: 0 10px 10px 10px;
+    font-weight: bold;
+}
+
+.login .links a:hover,
+.register .links a:hover {
+    color: #00008B;
+}
+
+.login .links a.active,
+.register .links a.active {
+    border-bottom: 3px solid brown;
+    color: #00008B;
+}
+
+.login form,
+.register form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.login form label,
+.register form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #00008B;
+    color: #ffffff;
+}
+
+.login form input[type="password"],
+.login form input[type="text"],
+.login form input[type="email"],
+.register form input[type="password"],
+.register form input[type="text"],
+.register form input[type="email"] {
+    width: 310px;
+    height: 50px;
+    border: 1px solid #dee0e4;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.login form input[type="submit"],
+.register form input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #00008B;
+    border: 0;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.2s;
+}
+
+.login form input[type="submit"]:hover,
+.register form input[type="submit"]:hover {
+    background-color: #00008B;
+    transition: background-color 0.2s;
+}
+
+.navtop {
+    background-color: #2f3947;
+    height: 60px;
+    width: 100%;
+    border: 0;
+}
+
+.navtop div {
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+}
+
+.navtop div h1,
+.navtop div a {
+    display: inline-flex;
+    align-items: center;
+}
+
+.navtop div h1 {
+    flex: 1;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    color: #eaebed;
+    font-weight: normal;
+}
+
+.navtop div a {
+    padding: 0 20px;
+    text-decoration: none;
+    color: #c1c4c8;
+    font-weight: bold;
+}
+
+.navtop div a i {
+    padding: 2px 8px 0 0;
+}
+
+.navtop div a:hover {
+    color: #eaebed;
+}
+
+body.loggedin {
+    background-color: #f3f4f7;
+}
+
+.login row {
+    margin-top: 40px;
+}
+
+.col-sm-4 {
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.col-sm-4 p {
+    text-align: left;
+    color: black;
+    font-size: 16px;
+    margin-block-start: 0px;
+}
+
+.list {
+    text-align: left;
+    color: black;
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.col-sm-6 {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.col-sm-8 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+}
+
+/*
+ * Globals
+ */
+
+
+/* Custom default button */
+.btn-light,
+.btn-light:hover,
+.btn-light:focus {
+    color: #333;
+    text-shadow: none;
+    /* Prevent inheritance from `body` */
+}
+
+
+/*
+ * Base structure
+ */
+
+body {
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+    max-width: 42em;
+}
+
+
+/*
+ * Header
+ */
+
+.nav-masthead .nav-link {
+    color: rgba(255, 255, 255, .5);
+    border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+    border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link+.nav-link {
+    margin-left: 1rem;
+}
+
+.nav-masthead .active {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+

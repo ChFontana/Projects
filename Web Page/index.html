@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>LeanTK - Home </title>
+
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="icon" href="/static/favicon.ico">
+
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="vendors/prism/prism.css" rel="stylesheet">
+    <link href="vendors/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/indexstyle.css') }}">
+    <link href="assets/css/user.css" rel="stylesheet" />
+
+  </head>
+
+
+  <body>
+
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark" data-navbar-on-scroll="data-navbar-on-scroll">
+        <div class="container"><a class="navbar-brand" href="index.html"><img src="{{ url_for('static', filename='img/leantkfull.png') }}" alt="" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fa-solid fa-bars text-white fs-3"></i></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+              <li class="nav-item"><a class="nav-link active" aria-current="page" a href="{{ url_for('home_page') }}">Home</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" a href="{{ url_for('pricing_page') }}">Pricing</a></li>
+              <li class="nav-item"><a class="nav-link" aria-current="page" a href="https://youtu.be/Su4aEbW_JRE" target="_blank">Tutorial</a></li>
+		  <li class="nav-item"><a class="nav-link" aria-current="page" a href="{{ url_for('tools_page') }}">Tools</a></li>
+              <li class="nav-item mt-2 mt-lg-0"><a class="nav-link btn btn-light text-black w-md-25 w-50 w-lg-100" aria-current="page" a href="{{ url_for('login') }}">Log In / Register</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="bg-dark"><img class="img-fluid position-absolute end-0" src="assets/img/hero/hero-bg.png" alt="" />
+
+
+        <!-- ============================================-->
+        <!-- <section> begin ============================-->
+        <section>
+
+          <div class="container">
+            <div class="row align-items-center py-lg-8 py-6">
+              <div class="col-lg-6 text-center text-lg-start">
+                <h1 class="text-white fs-5 fs-xl-6">NO MORE SPREADSHEETS</h1>
+                <p class="text-white py-lg-3 py-2">Build and Stress your business model, metrics and financial statements with AI in just 3 minutes.<br> 
+			You can save multiple versions, load old versions or upload your own csv with all your data.</p>
+                <div class="d-sm-flex align-items-center gap-3">
+                  <button class="btn btn-success text-black mb-3 w-75" onClick="parent.location='{{ url_for('register') }}'" value="Register" formtarget="_blank">Try LeanTK Free <br> (no cc required)</button>
+                  <button class="btn btn-outline-light mb-3 w-75" onClick="window.open('https://youtu.be/Su4aEbW_JRE','_blank')" value="Tutorial">How it works <br> Tutorial</button>
+                </div>
+              </div>
+              <div class="col-lg-6 text-center text-lg-end mt-3 mt-lg-0"><img class="img-fluid" src="{{ url_for('static', filename='img/hero/hero-graphics.png') }}" alt="" /></div>
+            </div>
+          </div>
+          <!-- end of .container-->
+
+        </section>
+        <!-- <section> close ============================-->
+        <!-- ============================================-->
+
+
+      </div>
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section>
+
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6 text-center text-lg-start"><img class="img-fluid" src="https://lh3.googleusercontent.com/yOe42y1mfAb1sxp7UicJkHxn7S9sooZR59qkdBIY2qPp6PkAG0rJtk2yRbcTu_Qmqc2eXzymPNrBnAqoiGllS3bojEzhdx-snj968vQ31uvQXSxIVIr_Hg_t56siRNDUYR0yddI_TwrlyGKw8_BYsH8nMfjeyS01PoUajSpw9D6tOO3IWvR6UTspm3zwwTJmqSnIhggRizQQsmK7YMViW2x1u0yir1m3wUrkx1brROUkej1XdYW-nfrBTEfLeg_CZCemX0V9SIwUxgr-Hsam4iLX-vpBBsnbdujzOWiyYCQ6WCXfjlK7-43w7soUYXxfRVpbCjPXuFV0yawrpzbtO6G02_paOC08nxSHNTqNlf5vaf69G1H52LgOf82gy9OJW8ucMBfY6WZ9hA-pgBoYPUwhxOC3LSPZzQP2znk7LxmMZJ6BXtbpAT9bq-4WadLQ39QWklUMlhovLdRug_y5OGW7KOldUSpGdO_bpHyTBXJY9x7hlk2qDJ2-rQJu6Q2EZOR4jwnqdDicnbqTUrrhXqxJaqg4StUuNev_x6ds0Y00RKDb1L5cUhn658ojvorlgZd2VJCCe1zsrPTvoDACNQ5PBwo_EPQFswImjDomsnLMo9SOT9F9OT6lPmulNx7tgWmZw0i7EIVaYYlfuHDgJt8Mfs4cAzwHOFzg1iO3ulsVAJleNd7eqeIfNsdZHyt94J3van_sdOO4a3eMOWa2orWgDBGu0Z-5dHni_GKTJfbsauZLN9fbG7WwzrFP_jeTAbx2WmGV3wui9bVQU5lpVyBR3JppNdM7XU2LuadfTclz6_752kP6F3IMKHuIkltmPUtQBaXqsoQN6KxfNQSCqBISJUN50iq7DtFEBPhHpObcG-jOBJ0FIc5dIxcDRuG-O2eU49Tk6k6rBtd94a6YXlCM2qzSYn5VC9DvAhHkJ3qNTZughQ=w529-h384-s-no?authuser=0" alt="" /></div>
+            <div class="col-lg-6">
+              <h1 class="fs-xl-5 fs-lg-4 fs-3">Load easily the inputs of your company.</h1>
+              <ul class="list-unstyled my-xl-5 my-3">
+                <li class="fs-2 my-4 d-flex align-items-center gap-3 text-black"><i class="fa-solid fa-circle-check fs-4 text-dark"></i><span>Easy and understandable inputs.</span></li>
+                <li class="fs-2 my-4 d-flex align-items-center gap-3 text-black"><i class="fa-solid fa-circle-check fs-4 text-dark"></i><span>No finance knowledge required.</span></li>
+                <li class="fs-2 my-4 d-flex align-items-center gap-3 text-black"><i class="fa-solid fa-circle-check fs-4 text-dark"></i><span>Less than 5 minutes required.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-8 pt-lg-0">
+
+        <div class="container">
+          <div class="d-flex flex-column-reverse flex-lg-row">
+            <div class="col-lg-4">
+              <h1 class="fs-lg-4 fs-md-3 fs-xl-5 mb-5">Get your statements.</h1>
+              <ul class="list-unstyled">
+		    <li class="fs-2 my-4 d-flex align-items-center gap-3 text-black"><i class="fa-solid fa-circle-check fs-4 text-dark"></i><span>Get your Balance Sheet, Income Statement and Cashflow..</span></li>
+                <li class="fs-2 my-4 d-flex align-items-center gap-3 text-black"><i class="fa-solid fa-circle-check fs-4 text-dark"></i><span>Impress your inversors.</span></li>
+                <li class="fs-2 my-4 d-flex align-items-center gap-3 text-black"><i class="fa-solid fa-circle-check fs-4 text-dark"></i><span>Forgot about impossible spreadsheets.</span></li>
+              </ul>
+            </div>
+            <div class="col-lg-8 text-center text-lg-end"><img class="img-fluid" src="https://lh3.googleusercontent.com/mnnBmzmh8H6-nM6EHC8NbnBxi5Vue-tXMdhShLbztxw3j53kHwbbnNEyki5PBEKueINOR0vqhj6nknPyYCxcdq1B8R2mtC_Bb42VDQTo1YmHuZ0mQjW05lenpi_VZUQo2iePEdPqnkYvxLHJk8oySLGarmhx-AP_FmRA6M7_8j2bHVRvDnbzGHEZRv1Io8oExziBdxPxL3PNjWKSpUhZ8m6fLyyCWbMgT1zP1m_PR6encjUgsm3Tyyu2SJ7tJ4uF9iADBQ-x7m4s5NkSe52qV40OuUGmhqzvTD1bJrkILL1ocPvCkdgUah-INjYEe0-3Pv79kddrBUDTw2_YMHWB7I02B309IcgLW0FumNo_qcDQDG-u34MqmMWh2y0UotfOLs5-kYMQIPfKvyZ6CKP4u4nxAxHjZ1jghiB6slX3U_xEXlu2LsFZ1jca52FtRhx6_NkUIMKWQfecWOaGgSz3ybQ-jTeGbl30PNhfJ7A_sMvwB4oMdtC8ax6prEv20120tcOCZ0UCVsX5HdYA-qyqbLrqPw-tegAdb1w92RTbavEajGn7SKlozfnM8Hog5btvG-pNLyEhXbXeXDf8pWysCtV-CfC83JomegD_oz_vYN3rUlfCjNaRb1qq8d1Tn5a1QEqm1e3-3NbqQUf4jTX_FrP3u9y2EtCD1qZtOTa1a-rlqR-XtBr3LvPgl2TKi63X_OvutrYQBbDeI9yEX1YazaCZZfeMQWasnC3IbK-_erltLnjQcz7DtQ8UjeLO56kwQpH_Q4HDx5p9nwh49YssfhBSyLwKtcXqS3m5IKK6X0E67h2ltCANZKJd-dUJjYOovAFhg2_2bzv3va8bS0HwMdvv7NHMR4QhH2CX0rngoCLbGh4RfP96jsBkKJ8BeRUKT832OPQblpIsy7wZUex0bVIp-R-_RxoVKMs-r2BxxPjqvL-xwg=w1387-h927-s-no?authuser=0" alt="" /></div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section>
+
+        <div class="container">
+          <p class="text-center fs-1">Our Services</p>
+          <h2 class="mx-auto text-center fs-lg-6 fs-md-5 w-lg-75">Boost the data of your business to the next level.</h2>
+          <div class="row gx-xl-7 mt-5">
+            <div class="col-md-4 mb-6 mb-md-0 text-center text-md-start"><img class="w-50 w-md-100" src="https://lh3.googleusercontent.com/WKohebve6OGd5iv8GQl8Dusd2Xgmi_rbT0Lblj4QaWRR9t9VcWnwCVoxW3lPHUDgCr8EUPgY_23sBtOKt_IPgMLWBc4T6o2PevOo951wOjAcwsoiKbOyEZcaGYH2PpKJFnCIEAN09JjKe_M-pZrGJTDrsKuvURPDxvQGTNqCcPDauFegoCMhcFzSSUldaZ_JBaYNKU_B5aaoBbg20wbhhBoKAiIcrhet9atTO5GqGjTD9HLx_vzEyys1mz8WbytogAlXUdGOICkKJNE2C0WV5y_zEflq54D_Un6yIsrsWWynAi37B93212KtZoLgz2iYUXU4_p6H2aNc7jHTcYGCnXmKVS3oHds16lrXc1Lz9w2ersZdm2-WZYbUc6aPuaJOD7DngVeOvRORSJc5fapxR_CUhqPRytpkzn8YdJtHMfYlQTDpm_RBy5WJuooI-DPVYsD997czeyrmtoi_4TNbYCnnEUcIDdvRnbgUss3hS9k87jt_wvpZhF3g3d9LseyM1kk5pYyiSr7LLEeDJ9qzn69aFR_Hw_lmr_GY8oFzU_N56i4yCfxYTOp2BkHGy8V7PfRYlIGZnL3KhYE-nFcbyWDgG8KYdLnhj14xZXUjo-jDD-9xIAhCxRP5wdnqpBxgi4XpjFPdeMn5n-jeVVVoBHntqFS4vG-CmHAn5BzEVBzY76KP8Zm3G0ux1NMVi8HHIvHStRlOmufgDYrEumI3v_quXMJCZX6a5ieiVDlJ7vmSctCWYzswUYnNDeJIXCZGRU0730FG7VEhd3WvBhmv5Gy6msYjeC5fkOsNDWXqx5B8qs0rI6vnINoCiVXxy4GHYpdFchIEzR2sO-znSJxnbKMF3wu2hLanIoTfZbjar2kbdO5F7M2lG6AX3kNPOA6TsuA9TOEq63YqWDMkpBowCnQDmZlZZFm62Ahbo1xLae3cZpOq0A=w707-h777-s-no?authuser=0" alt="" />
+              <h4 class="mt-3 my-1">Know all your metrics</h4>
+              <p class="fs-1 mb-0">Get simulations, insights and others.</p>
+            </div>
+            <div class="col-md-4 mb-6 mb-md-0 text-center text-md-start"><img class="w-50 w-md-100" src="https://lh3.googleusercontent.com/lye3wA7EgLOhJZ08J2lDt240ly9_FUqDI1Q1CCVV78x8ZZ3sdT9NoB9mrrCLwMAIQukB61rJYjbsfJK05EW97IGkipILJ4KKTLiTxrzqVTJdjbBGxW_1JHUYkDMHCynkJditZmBWuCBn6Vm5Kfv6F55HqdumHtoE7Eswbe7Ti-Sr6rgYxuUO_K7whRTF8pqZBszCaEFiw7tUFIJHaFCw32YyjMokmDkBZyGhK7GMDzyWgbRwa5x5p-JYKw2o-Wv-mRknqpt_6wDyYIXuxnWrxqGHxfpdXElmlmK6Eqhtn9FkeVtXlz8dzj5IRf1QFBJrSe-H2hKo2me6xja6wJ3Bmm1ZR07lk2Xew7iTEN3hYGCEHn0zFHSf1GTXkY_l22CQdPQQsh8X3hbiPlb9_5BIMah2O2TvjG0E2qI0uISasOlNxA-e2YnCk4FSWeYlGBCctnGnuNsr5PFaq5j8RporgqdECcvcKqn-Y-qVKhIhpBmhZucCQsFoS6LnLLZLN5LFRQlU2cUzPZH6XnnYLzojO09w77jcu4nvDxpE_lSS0RCEDL5zr_JninCAqnBc77Yf-j6gHSifBYjTzsXdqoh4mAlInErLTcc6auyu1xtAcP6GjyujdgEINO3jGf4xZH-1BoKRPMXVVbO-8-fe3lzQYMct4tQPug95n8cHRGD0no4X9fXMiUc8pMiqi7FkRj5e6WtQjr0TIHHG1O3V1rAlNd4VmEXluRF-lsCokvFjVz6Mgmvigwd3cgd22W06u0AKdQlYjEsiTruSvJMcNNh-jk5Tvd2-E7ewHp7Z3I8--FyAbK69edXFviIWWWhHw_EqayibeyRk39fXJg1DkWGqxpsDc3zsIq3EnZHAaqctjCIk85ZT_TqZry-4fHsK_96w_jD3rbY8wcPkQ6IcTl9zy5W-zfSRoTPrFtFACoULia7itMkQZg=w707-h777-s-no?authuser=0" alt="" />
+              <h4 class="mt-3 my-1">Benchmarks.</h4>
+              <p class="fs-1 mb-0">Compare how you are doing in your industry.</p>
+            </div>
+            <div class="col-md-4 mb-6 mb-md-0 text-center text-md-start"><img class="w-50 w-md-100" src="https://lh3.googleusercontent.com/hSoZtov9q3Xa9v6Aufz51uUXkIw8a3ssyVLJKxWpYNiJLzPkDXDj8xzyJZPK0ldek0lkEqLxOThbKQktCREIu3AnFwC3eUdJcER28dSpgNdeGgRZXo20Rk_pnYBatZRhNNMgHRNW6JksSeA4QixsOcTkVxzMxvI_PbBwCsI2jOPYEwIjkRr4NOzA1dxHnKF7y86Chr6v_bleMhX9MXWAUrr0KfPrVhN0ZPz_tLrbK0Qic_VfYUpeBDwuvnBu8jwU8U99oY_kD95srksRZG5SduatrNdauefZGd27L0ZR4la9LgZKDMtQS5-HirECHdL5Cs3zNMENBkPwJUjvvyZ0NAFZXRCsZqk9P6W3tMETSsivKlrRqG1NDe9bK2Ol-1jeDq6fEqjM4kxgBFphZm2J1IfG_HJduSMlMqwgtCPRqV9DCZGLTkKOwxMGFAWQbVSSIrWHUG7ui4QU7BwPql0QlCDRdlx6JebTQS1QFBxgQgm1L7JcnYvAHeZHnjCNENMPfRnbAMwoSfE-jGokMok2QlHPCCJNMj8hMDsuKJp0sqt7RhdgIMhM6UNyS2D4U6f10p8f3F9sraiesvfAkjtwdUT1xNEdvSiQU0ail8JuO4ttmq_XvAUSxn4yWEquCvcOO6rmjpHXsfBxLNrgEERf2F7URlSQUvc79JvJUjiBR35YqxqRXBvTBt00llsP9SUuTXPobPyHmAUv5CyDUWP-QIM8fLj2NShn3RVs1fu679AULVK5ZaXiBCKGrBqo1z67vvQSjP5naiJhuVRJO15h7iLZNdQANAktKLDt7ARpfR18Ld_yeZjPDneg00ns7UcAjhtL6KEy4uEpbr11cl4otT7R_NOrfNDTPKv6DGSmHQ-NYHyAAj9zc4pbRR8HG5RGb5yrqEhWAFaL7BpTo_-wm38N9QuqSgsJsuU5nBKLN0oDcVy9dw=w707-h777-s-no?authuser=0" alt="" />
+              <h4 class="mt-3 my-1">IA tools.</h4>
+              <p class="fs-1 mb-0">Explore all the aspects of your company.</p>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+    </main>
+    <!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+  <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="pt-0">
+
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-6 col-sm-12"><a href="index.html"><img class="img-fluid mt-5 mb-4" src="assets/img/black-logo.png" alt="" /></a>
+          </div>
+          <div class="col-lg-2 col-sm-4">
+            <h3 class="fw-bold fs-1 mt-5 mb-4"><a href='https://www.linkedin.com/company/leantk', target="_blank", style="color:blue;">Linkedin/leantk</a></h3>
+          </div>
+          <div class="col-lg-2 col-sm-4">
+            <h3 class="fw-bold fs-1 mt-5 mb-4"><a href="https://www.linkedin.com/in/cristianfontana/", target="_blank", style="color:blue;">Linkedin/cristianfontana</a></h3>
+          </div>
+        </div>
+      </div>
+      <!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+  </body>
+
+</html>
