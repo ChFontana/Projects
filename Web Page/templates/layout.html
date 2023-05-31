@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    </head>
+    <body class="loggedin">
+        <nav class="navtop">
+            <div>
+                <h1>@Phy Blog</h1>
+                <a href="{{ url_for('home') }}"><i class="fa fa-home"></i>Home</a>
+
+                <a href="{{ url_for('logout') }}"><i class="fa fa-sign-out"></i>Logout</a>
+            </div>
+        </nav>
+
+
+   </body>
+</html>
